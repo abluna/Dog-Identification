@@ -55,7 +55,7 @@ if img is not None:
             tf_model = load_model()
 
             index_list = dog_index_list
-            targ_size = 800
+            targ_size = 350
 
              # `img` is a PIL image of size 224x224
             img_v2 = image.load_img(img, target_size=(targ_size, targ_size))
