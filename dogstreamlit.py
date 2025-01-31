@@ -109,7 +109,7 @@ if img is not None:
             with cent_co:
                 st.divider()
                 st.markdown("##### :gray[Predicted Dog Breed (with % certainty):]")
-                st.dataframe(df)
+                st.dataframe(df, hide_index=True)
                 ##st.image(list(df["Link"]), caption = list(df["Caption"]), use_container_width=False)
 
 
