@@ -19,7 +19,7 @@ To run a prediction, upload a dog's image (try to ensure it's clear and only inc
 ######################
 
 @st.cache_resource
-def load_model():
+def load_model(show_spinner = "Loading model (only done once per session)..."):
 
     dog_model = keras.saving.load_model("hf://abluna/dog_breed_v2")
 
