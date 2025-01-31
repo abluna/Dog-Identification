@@ -95,17 +95,7 @@ if img is not None:
             df['Probability'] = df['Probability'].apply(lambda x: f"{x/100:.1%}")
             df['Caption'] = df['Breed'] + ' (' + df['Probability'] + ')'
 
-            # st.dataframe(
-            #     df,
-            #     column_config={
-            #         "name": "App name",
-            #         "Probability": st.column_config.NumberColumn(
-            #             "Probability",
-            #             format="%.2f%%"),
-            #         "Link": st.column_config.ImageColumn("Image", width='small')
-            #     },
-            #     hide_index=True
-            # )
+
             with cent_co:
                 st.divider()
                 st.markdown("##### :gray[Predicted Dog Breed (with % certainty):]")
